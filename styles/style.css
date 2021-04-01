@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:kufi;
+    src: url('../fonts/W\ kufi\ 4\ .ttf');
+}
+a,h1{
+    font-family:kufi;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper{
+    background: url('../imgs/coffee-bg.jpg');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-position:0 -300px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+#logo{
+    width: 180px;
+
+}
+.logo{
+    transition: 0.5s;
+
+}
+#list-nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#list-nav>li{
+    list-style: none;
+    margin:0 50px;
+    position: relative;
+top: 20px;
+}
+.nav-bar{
+    height: 100px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-navbar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+li>button{
+    background:#49200e;
+    color: white;
+    /* padding: 15px; */
+    width:130px;
+    height: 70px;
+    font-size: 20px;
+    border: 2px solid #49200e;
+    border-radius: 5px 10px;
+    font-family: b nazanin;
+    font-weight:900;
+    transition: 1s;
+
+}
+button:hover{
+    background: #d89058;
+    color: #49200e;
+}
+
+li{
+list-style: none;
+}
+.text{
+    margin:0 100px;
+    position: relative;
+    top: 150px;
+    direction: rtl;
+transform: translateX(-40px);
+}
+#text-para{
+    width: 700px;
+    font-weight: 25px;
+    transition: 0.3s;
+}
+#text-org{
+    transition: 0.3s;
+    font-size:80px !important;
+}
+#text-para{
+    font-size: 25px;
+}
+hr{
+    width: 25%;
+    margin: 50px 0;
+    transition: 0.3s;
+    border:5px solid ;
+}
+.junb{
+transform: translateX(900px);
+}
+.logoimg{
+transform: translateX(-400px);
+}
+.loading-div-timing{
+    opacity: .8;
+    z-index: 9999999;
+position: fixed;
+width: 100%;
+height: 100%;
+background: rgb(17, 17, 17);
+
+}
+.loading-div{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    border-radius:50%;
+    border-top:10px solid red;
+    animation: anim 2s infinite linear;
+    /* transition: 1s; */
+}
+
+@keyframes anim{
+    0%{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform:translate(-50%,-50%)rotate(360deg);
+    }
+}
